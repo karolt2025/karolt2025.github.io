@@ -1,1 +1,0 @@
-# karolt2025.github.io
