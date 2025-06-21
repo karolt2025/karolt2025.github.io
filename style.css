@@ -144,20 +144,21 @@ figcaption {
   font-size: 1rem;
   color: #444;
   background-color: #f9f9f9;
+  display: block;
 }
 
-footer {
-  display: flex;
+.footer {
   background: #fff;
   border-top: 1px solid #e0e0e0;
   padding: 2rem;
 }
-footer nav {
+.footer nav {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-
+}
 .logo_box {
-  height:100px;
+  height:50px;
   width:auto;
   margin-right: 1rem;
   display: flex;
@@ -166,9 +167,10 @@ footer nav {
 
 }
 footer ul {
+  display: flex-end;
   list-style: none;
-  display: flex -end;
   gap: 1rem;
+  list-style-type: none; 
 }
 footer a {
   text-decoration: none;
@@ -196,11 +198,11 @@ footer a:hover {
     font-size: 2rem;
   }
 }
-
+/* 
 .links_box {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   border: 2px dotted rgb(96 139 168);
-}
+} */
 
