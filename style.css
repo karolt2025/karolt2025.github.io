@@ -59,7 +59,7 @@
     font-family: "Inter", sans-serif;
     color: var(--black);
     scroll-behavior: smooth;
-
+}
 body {
   font-family: 'Georgia', serif;
   color: #333;
@@ -148,6 +148,9 @@ figcaption {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #fff;
   border-top: 1px solid #e0e0e0;
   padding: 2rem;
@@ -158,13 +161,11 @@ figcaption {
   justify-content: flex-end;
 }
 .logo_box {
-  height:50px;
+  height:100px;
   width:auto;
   margin-right: 1rem;
   display: flex;
   justify-content: flex-start; 
-}
-
 }
 footer ul {
   display: flex-end;
