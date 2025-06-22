@@ -49,7 +49,6 @@ ul {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 input,
@@ -88,7 +87,7 @@ header h1 {
 }
 
 /* NAVIGATION */
-nav ul {
+.nav-header-links {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -122,24 +121,12 @@ nav a:hover {
 }
 
 /* CONTENT SECTION */
-.content ul {
+.projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
   padding: 2rem;
-}
-
-.content li {
-  flex: 1 1 calc(33% - 2rem);
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.content li:hover {
-  transform: translateY(-5px);
 }
 
 .content img {
@@ -148,7 +135,7 @@ nav a:hover {
   display: flex;
 }
 
-figcaption {
+.projects-caption {
   padding: 1rem;
   font-weight: 300;
   font-size: 1rem;
@@ -163,29 +150,42 @@ figcaption {
 .footer {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   background: #fff;
   border-top: 1px solid #e0e0e0;
   padding: 2rem;
 }
 
-.footer nav {
+/* .footer_nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
+} */
 
-.logo_box {
+/* .logo_box {
   height: 100px;
   width: auto;
   margin-right: 1rem;
   display: flex;
   justify-content: flex-start;
-}
+} */
 
-footer ul {
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 75%;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+.nav-footer-links {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   gap: 1rem;
   list-style: none;
 }
@@ -214,7 +214,34 @@ footer a:hover {
     text-align: center;
   }
 
-  .content li {
+@media (max-width: 1024px) {
+  header,
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header,
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+  /* @media (max-width: 600px) {
+  .projects-list {
+    flex-direction: row;
+    padding: 1rem;
+  }
+} */
+
+  .content ul {
     flex: 1 1 100%;
   }
 
