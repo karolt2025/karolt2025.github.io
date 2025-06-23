@@ -290,3 +290,14 @@ footer a:hover {
       background-color: #0056b3;
     }
 
+.about-me {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
